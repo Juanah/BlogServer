@@ -23,14 +23,14 @@ public class BaseDatabaseHelper {
      */
     private static final String Username = DatabaseConstants.USERNAME;
     private static final String Password = DatabaseConstants.PASSWORD;
-
+    private static final String ConnectionString = "jdbc:mysql://localhost/" + DatabaseConstants.DatabaseName + "/?"
+                            + "user=" + Username + "&password=" + Password;
     public static boolean Connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-
+            _log.info("ConnectionString:" + ConnectionString);
             connection = DriverManager
-                    .getConnection("jdbc:mysql://localhost/" + DatabaseConstants.DatabaseName + "?"
-                            + "user=" + Username + "&password=" + Password);
+                    .getConnection("jdbc:mysql://localhost/" + DatabaseConstants.DatabaseName,Username,Password);
             return true;
         } catch (ClassNotFoundException | SQLException e) {
             _log.error(e);

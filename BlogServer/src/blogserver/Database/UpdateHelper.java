@@ -62,7 +62,7 @@ public class UpdateHelper {
             String query = "update "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +" set imageBytes = ? where Id = ?";
             PreparedStatement preparedStatement = connection
                     .prepareStatement(query);
-            preparedStatement.setBytes(1, image.getImage());
+            preparedStatement.setString(1, image.getImage());
             preparedStatement.setInt(3, image.getId());
             preparedStatement.executeUpdate();
             return true;

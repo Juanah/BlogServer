@@ -7,9 +7,13 @@ package blogserver;
 
 import Entities.Article;
 import Entities.Image;
-import blogserver.Database.BaseDatabaseHelper;
 import blogserver.Database.InsertHelper;
 import blogserver.Database.TableHelper;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
@@ -31,12 +35,11 @@ public class BlogServer {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         
        Init();
        _log.info("Starting Server...");
-       
-       
+       TestDatabase();
     }
     
     private static void Init()
@@ -54,7 +57,7 @@ public class BlogServer {
 
         FileAppender fa = new FileAppender();
         fa.setName("FileLogger");
-        fa.setFile("mylog.log");
+        fa.setFile("BlogServer.log");
         fa.setLayout(new PatternLayout("%d %-5p [%c{1}] %m%n"));
         fa.setThreshold(Level.DEBUG);
         fa.setAppend(true);
@@ -64,7 +67,7 @@ public class BlogServer {
         Logger.getRootLogger().addAppender(fa);
     }
     
-    private static void TestDatabase()
+    private static void TestDatabase() throws IOException
     {
         _log.info("Testing Database");
         
@@ -72,7 +75,8 @@ public class BlogServer {
         article.setContent("TestContent");
         
         Image image = new Image();
-        image.setImage(null);
+        
+        image.setImage("/home/jonas/Bilder/DSC05546.JPG");
         
         
         boolean InsertImage = InsertHelper.Insert(image);

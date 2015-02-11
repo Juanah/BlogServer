@@ -1,0 +1,16 @@
+2015-02-11 20:31:27,122 INFO  [Main] Starting Server...
+2015-02-11 20:31:27,128 INFO  [Main] Testing Database
+2015-02-11 20:31:27,444 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:31:27,445 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:31:27,448 ERROR [InsertHelper] connection object is null
+2015-02-11 20:31:27,454 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:31:27,455 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:31:27,455 ERROR [DeleteHelper] connection object is null
+2015-02-11 20:33:16,970 INFO  [Main] Starting Server...
+2015-02-11 20:33:16,975 INFO  [Main] Testing Database
+2015-02-11 20:33:17,358 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:33:17,359 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:33:17,377 ERROR [InsertHelper] connection object is null
+2015-02-11 20:33:17,384 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:33:17,386 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:33:17,387 ERROR [DeleteHelper] connection object is null

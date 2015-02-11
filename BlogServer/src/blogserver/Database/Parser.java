@@ -28,9 +28,9 @@ public class Parser {
         try {
             while (resultset.next()) {                
                 Article article = new Article();
-                article.setId(resultset.getInt("Id"));
-                article.setContent(resultset.getString("Content"));
-                article.setImage(TableHelper.GetImage(resultset.getInt("Image")));
+                article.setId(resultset.getInt(DatabaseConstants.ID));
+                article.setContent(resultset.getString(DatabaseConstants.ARTICLE_CONTENT));
+                article.setImage(TableHelper.GetImage(resultset.getInt(DatabaseConstants.ARTICLE_IMAGE)));
                 articles.add(article);
             }
         } catch (Exception e) {
@@ -46,8 +46,8 @@ public class Parser {
         try {
             while (resultset.next()) {  
                 Image image = new Image();
-                image.setId(resultset.getInt("Id"));
-                image.setImage(resultset.getBytes("imageBytes"));
+                image.setId(resultset.getInt(DatabaseConstants.ID));
+                image.setImage(resultset.getString(DatabaseConstants.IMAGE_BYTES));
                 images.add(image);
             }
         } catch (Exception e) {

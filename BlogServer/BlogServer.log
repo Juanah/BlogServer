@@ -1,0 +1,46 @@
+2015-02-11 20:37:11,982 INFO  [Main] Starting Server...
+2015-02-11 20:37:11,986 INFO  [Main] Testing Database
+2015-02-11 20:37:12,010 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer?user=blog_server&password=Xlov76&4
+2015-02-11 20:37:12,300 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:37:12,304 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:37:12,306 ERROR [InsertHelper] connection object is null
+2015-02-11 20:37:12,308 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer?user=blog_server&password=Xlov76&4
+2015-02-11 20:37:12,314 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:37:12,314 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:37:12,314 ERROR [DeleteHelper] connection object is null
+2015-02-11 20:38:49,248 INFO  [Main] Starting Server...
+2015-02-11 20:38:49,252 INFO  [Main] Testing Database
+2015-02-11 20:38:49,284 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:38:49,588 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:38:49,592 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:38:49,592 ERROR [InsertHelper] connection object is null
+2015-02-11 20:38:49,594 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:38:49,599 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:38:49,599 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:38:49,599 ERROR [DeleteHelper] connection object is null
+2015-02-11 20:40:48,868 INFO  [Main] Starting Server...
+2015-02-11 20:40:48,873 INFO  [Main] Testing Database
+2015-02-11 20:40:48,904 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:40:49,182 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:40:49,186 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:40:49,186 ERROR [InsertHelper] connection object is null
+2015-02-11 20:40:49,187 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:40:49,192 ERROR [BaseDatabaseHelper] java.sql.SQLException: Access denied for user 'blog_server'@'localhost' (using password: YES)
+2015-02-11 20:40:49,193 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 20:40:49,194 ERROR [DeleteHelper] connection object is null
+2015-02-11 20:43:07,268 INFO  [Main] Starting Server...
+2015-02-11 20:43:07,272 INFO  [Main] Testing Database
+2015-02-11 20:43:07,296 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:43:07,716 ERROR [InsertHelper] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'default, null)' at line 1
+2015-02-11 20:49:59,900 INFO  [Main] Starting Server...
+2015-02-11 20:49:59,906 INFO  [Main] Testing Database
+2015-02-11 20:49:59,966 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:50:00,473 ERROR [InsertHelper] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'default, _binary'ÿØÿáEÄExif\0\0II*\0\0\0\0\0\0 \0\0\0’\0\0\0\0\0' at line 1
+2015-02-11 20:50:57,542 INFO  [Main] Starting Server...
+2015-02-11 20:50:57,546 INFO  [Main] Testing Database
+2015-02-11 20:50:57,581 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 20:50:58,124 ERROR [InsertHelper] Data truncation: Data too long for column 'Bytes' at row 1
+2015-02-11 21:16:51,467 INFO  [Main] Starting Server...
+2015-02-11 21:16:51,474 INFO  [Main] Testing Database
+2015-02-11 21:16:51,492 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 21:16:51,926 INFO  [Main] Insert succeded

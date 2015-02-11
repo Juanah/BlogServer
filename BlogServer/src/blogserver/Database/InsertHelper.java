@@ -69,9 +69,9 @@ public class InsertHelper {
         }
         try {
             PreparedStatement preparedStatement = connection.prepareStatement
-            ("insert into "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +"values (default, ?)");
+            ("insert into "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +" values (default, ?)");
             //Content
-            preparedStatement.setBytes(1, image.getImage());
+            preparedStatement.setString(1, image.getImage());
             preparedStatement.executeUpdate();
             return true;
         } catch (Exception e) {
