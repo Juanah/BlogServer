@@ -13,14 +13,14 @@ public class Image extends BaseEntity {
     
     
     
-    private byte[] _Image;
+    private String _Image;
 
     
-    public byte[] getImage() {
+    public String getImage() {
         return _Image;
     }
 
-    public void setImage(byte[] _Image) {
+    public void setImage(String _Image) {
         this._Image = _Image;
     }
     
