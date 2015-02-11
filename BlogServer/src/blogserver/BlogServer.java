@@ -5,6 +5,12 @@
  */
 package blogserver;
 
+import Entities.Article;
+import Entities.Image;
+import blogserver.Database.BaseDatabaseHelper;
+import blogserver.Database.InsertHelper;
+import blogserver.Database.TableHelper;
+import java.util.List;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -18,12 +24,19 @@ import org.apache.log4j.PatternLayout;
 public class BlogServer {
 
     /**
+     * Member
+     */
+    private static Logger _log = Logger.getLogger("Main");
+
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         
-        
-        
+       Init();
+       _log.info("Starting Server...");
+       
+       
     }
     
     private static void Init()
@@ -49,8 +62,34 @@ public class BlogServer {
 
         //add appender to any Logger (here is root)
         Logger.getRootLogger().addAppender(fa);
-        
     }
     
+    private static void TestDatabase()
+    {
+        _log.info("Testing Database");
+        
+        Article article = new Article();
+        article.setContent("TestContent");
+        
+        Image image = new Image();
+        image.setImage(null);
+        
+        
+        boolean InsertImage = InsertHelper.Insert(image);
+        
+        List<Image> images = TableHelper.GetImageTable();
+        article.setImage(images.get(0));
+        
+        boolean InsertArticle = InsertHelper.Insert(article);
+        
+        if(InsertArticle && InsertImage)
+        {
+            _log.info("Insert succeded");
+        }else
+        {
+            _log.error("Could not Insert");
+        }
+        
+    }
     
 }
