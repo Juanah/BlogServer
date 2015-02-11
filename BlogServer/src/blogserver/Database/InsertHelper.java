@@ -42,7 +42,7 @@ public class InsertHelper {
         }
         try {
             PreparedStatement preparedStatement = connection.prepareStatement
-            ("insert into ABlog.Articles values (default, ?, ?)");
+            ("insert into "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_ARTICLES +" values (default, ?, ?)");
             //Content
             preparedStatement.setString(1, article.getContent());
             preparedStatement.setInt(2, article.getImage().getId());
@@ -69,7 +69,7 @@ public class InsertHelper {
         }
         try {
             PreparedStatement preparedStatement = connection.prepareStatement
-            ("insert into  ABlog.Images values (default, ?)");
+            ("insert into "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +"values (default, ?)");
             //Content
             preparedStatement.setBytes(1, image.getImage());
             preparedStatement.executeUpdate();

@@ -38,7 +38,7 @@ public class UpdateHelper {
         }
         try {
 
-            String query = "update ABlog.Articles set Content = ? , Image = ?  where Id = ?";
+            String query = "update "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_ARTICLES +" set Content = ? , Image = ?  where Id = ?";
             PreparedStatement preparedStatement = connection
                     .prepareStatement(query);
             preparedStatement.setString(1, article.getContent());
@@ -59,7 +59,7 @@ public class UpdateHelper {
             return false;
         }
         try {
-            String query = "update ABlog.Images set imageBytes = ? where Id = ?";
+            String query = "update "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +" set imageBytes = ? where Id = ?";
             PreparedStatement preparedStatement = connection
                     .prepareStatement(query);
             preparedStatement.setBytes(1, image.getImage());

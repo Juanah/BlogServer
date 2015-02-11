@@ -33,7 +33,7 @@ public class TableHelper {
         }
         
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from ABlog.Articles");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_ARTICLES );
             resultset = preparedStatement.executeQuery();
             if(resultset == null)
             {
@@ -60,7 +60,7 @@ public class TableHelper {
         
         try {
             PreparedStatement preparedStatement = 
-                    connection.prepareStatement("select * from ABlog.Articles " + whereclausle);
+                    connection.prepareStatement("select * from "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_ARTICLES + " " + whereclausle);
             resultset = preparedStatement.executeQuery();
             if(resultset == null)
             {
@@ -88,7 +88,7 @@ public class TableHelper {
         
         try {
             PreparedStatement preparedStatement =
-                    connection.prepareStatement("select * from ABlog.Images where Id = ?");
+                    connection.prepareStatement("select * from "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES +" where Id = ?");
             preparedStatement.setInt(1, id);
             resultset = preparedStatement.executeQuery();
             if(resultset == null)
@@ -116,7 +116,7 @@ public class TableHelper {
         
         try {
             PreparedStatement preparedStatement =
-                    connection.prepareStatement("select * from ABlog.Images");
+                    connection.prepareStatement("select * from "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_IMAGES );
             resultset = preparedStatement.executeQuery();
             if(resultset == null)
             {
@@ -143,7 +143,7 @@ public class TableHelper {
         
         try {
             PreparedStatement preparedStatement = 
-                    connection.prepareStatement("select * from ABlog.Articles " + whereclausle);
+                    connection.prepareStatement("select * from "+DatabaseConstants.DatabaseName +"." + DatabaseConstants.TABLE_ARTICLES + " " + whereclausle);
             resultset = preparedStatement.executeQuery();
             if(resultset == null)
             {
