@@ -5,6 +5,8 @@
  */
 package Entities;
 
+import java.util.List;
+
 /**
  *
  * @author jonas
@@ -15,6 +17,16 @@ public class Article extends BaseEntity {
 
     private Image image;
 
+    private List<ArticleComment> Comments;
+
+    public List<ArticleComment> getComments() {
+        return Comments;
+    }
+
+    public void setComments(List<ArticleComment> Comments) {
+        this.Comments = Comments;
+    }
+    
     public Image getImage() {
         return image;
     }
