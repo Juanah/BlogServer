@@ -7,6 +7,7 @@ package blogserver;
 
 import Entities.Article;
 import Entities.Image;
+import blogserver.Database.BaseDatabaseHelper;
 import blogserver.Database.InsertHelper;
 import blogserver.Database.TableHelper;
 import java.io.File;
@@ -15,6 +16,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Scanner;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.FileAppender;
 import org.apache.log4j.Level;
@@ -31,14 +33,37 @@ public class BlogServer {
      * Member
      */
     private static Logger _log = Logger.getLogger("Main");
-
+    private static boolean DEBUG = true;
+    private static Scanner _scanner = new Scanner(System.in);
+    
     /**
      * @param args the command line arguments
+     * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
         
        Init();
        _log.info("Starting Server...");
+       
+       if(DEBUG)
+       {
+           _log.warn("Soll die Datenbank neu erstellt werden? Y/N");
+           String userInput = _scanner.nextLine();
+           if(userInput.equals("Y"))
+           {
+               if(!BaseDatabaseHelper.CreateDatabaseAndTables())
+               {
+                   _log.info("Database has been created");
+               } else {
+                   _log.error("Database could not be created");
+               }
+           }else
+           {
+               _log.info("Datenbank wurde nicht erstellt");
+           }
+       }
+       
+       
        TestDatabase();
     }
     
@@ -78,7 +103,6 @@ public class BlogServer {
         
         image.setImage("/home/jonas/Bilder/DSC05546.JPG");
         
-        
         boolean InsertImage = InsertHelper.Insert(image);
         
         List<Image> images = TableHelper.GetImageTable();
@@ -93,7 +117,6 @@ public class BlogServer {
         {
             _log.error("Could not Insert");
         }
-        
     }
     
 }

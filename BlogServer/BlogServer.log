@@ -44,3 +44,213 @@
 2015-02-11 21:16:51,474 INFO  [Main] Testing Database
 2015-02-11 21:16:51,492 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
 2015-02-11 21:16:51,926 INFO  [Main] Insert succeded
+2015-02-11 22:41:58,788 INFO  [Main] Starting Server...
+2015-02-11 22:41:58,792 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:42:10,371 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:42:10,647 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:42:10,650 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:42:10,655 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:42:10,655 INFO  [Main] Database has been created
+2015-02-11 22:42:10,656 INFO  [Main] Testing Database
+2015-02-11 22:42:10,659 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:42:10,665 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:42:10,666 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:42:10,666 ERROR [InsertHelper] connection object is null
+2015-02-11 22:42:10,668 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:42:10,673 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:42:10,674 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:42:10,674 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:44:06,426 INFO  [Main] Starting Server...
+2015-02-11 22:44:06,430 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:44:11,355 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:44:11,604 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:44:11,604 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:44:11,609 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:44:11,609 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:44:11,610 INFO  [Main] Database has been created
+2015-02-11 22:44:11,610 INFO  [Main] Testing Database
+2015-02-11 22:44:11,613 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:44:11,618 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:44:11,619 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:44:11,619 ERROR [InsertHelper] connection object is null
+2015-02-11 22:44:11,621 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:44:11,626 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:44:11,626 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:44:11,630 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:47:14,497 INFO  [Main] Starting Server...
+2015-02-11 22:47:14,502 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:47:20,237 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:47:20,491 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:47:20,492 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:47:20,497 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:47:20,498 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:47:20,498 INFO  [Main] Database has been created
+2015-02-11 22:47:20,498 INFO  [Main] Testing Database
+2015-02-11 22:47:20,501 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:47:20,506 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:47:20,506 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:47:20,507 ERROR [InsertHelper] connection object is null
+2015-02-11 22:47:20,508 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:47:20,512 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:47:20,513 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:47:20,516 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:52:20,664 INFO  [Main] Starting Server...
+2015-02-11 22:52:20,668 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:52:25,332 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:52:25,589 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:52:25,590 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:52:25,596 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:52:25,596 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:52:25,597 INFO  [Main] Database has been created
+2015-02-11 22:52:25,597 INFO  [Main] Testing Database
+2015-02-11 22:52:25,601 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:52:25,606 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:52:25,607 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:52:25,607 ERROR [InsertHelper] connection object is null
+2015-02-11 22:52:25,609 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/BlogServer/?user=blog_server&password=Xlov76&4
+2015-02-11 22:52:25,615 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:52:25,616 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:52:25,621 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:53:35,956 INFO  [Main] Starting Server...
+2015-02-11 22:53:35,959 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:53:40,241 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:53:40,517 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:53:40,518 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:53:40,523 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:53:40,524 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:53:40,524 INFO  [Main] Database has been created
+2015-02-11 22:53:40,525 INFO  [Main] Testing Database
+2015-02-11 22:53:40,528 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:53:40,533 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:53:40,534 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:53:40,534 ERROR [InsertHelper] connection object is null
+2015-02-11 22:53:40,535 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:53:40,540 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'BlogServer'
+2015-02-11 22:53:40,540 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:53:40,543 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:54:30,752 INFO  [Main] Starting Server...
+2015-02-11 22:54:30,757 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:55:28,890 INFO  [Main] Starting Server...
+2015-02-11 22:55:28,896 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:55:35,318 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:55:35,573 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'user=blog_server&password=Xlov76&4'
+2015-02-11 22:55:35,573 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:55:35,578 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:55:35,578 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.lang.NullPointerException
+2015-02-11 22:55:35,578 INFO  [Main] Database has been created
+2015-02-11 22:55:35,579 INFO  [Main] Testing Database
+2015-02-11 22:55:35,582 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:55:35,587 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'user=blog_server&password=Xlov76&4'
+2015-02-11 22:55:35,587 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:55:35,587 ERROR [InsertHelper] connection object is null
+2015-02-11 22:55:35,589 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/user=blog_server&password=Xlov76&4
+2015-02-11 22:55:35,594 ERROR [BaseDatabaseHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'user=blog_server&password=Xlov76&4'
+2015-02-11 22:55:35,595 ERROR [BaseDatabaseHelper] java.lang.NullPointerException
+2015-02-11 22:55:35,599 ERROR [DeleteHelper] connection object is null
+2015-02-11 22:57:30,097 INFO  [Main] Starting Server...
+2015-02-11 22:57:30,101 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 22:57:34,953 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 22:57:35,254 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 22:57:35,272 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.sql.SQLException: Can't create database 'BlogServer'; database exists
+2015-02-11 22:57:35,273 INFO  [Main] Database has been created
+2015-02-11 22:57:35,276 INFO  [Main] Testing Database
+2015-02-11 22:57:35,281 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 22:57:35,283 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:04:59,607 INFO  [Main] Starting Server...
+2015-02-11 23:04:59,612 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:05:05,385 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:05:05,710 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:05:05,715 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Content` LONGTEXT NULL, `Image` VARCHAR(MAX) NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:05:05,716 INFO  [Main] Database has been created
+2015-02-11 23:05:05,719 INFO  [Main] Testing Database
+2015-02-11 23:05:05,734 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:05:05,736 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:07:58,064 INFO  [Main] Starting Server...
+2015-02-11 23:07:58,070 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:08:02,611 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:08:02,949 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:08:02,953 ERROR [BaseDatabaseHelper] Could not Create Database and Tablesjava.sql.SQLException: Can't create database 'BlogServer'; database exists
+2015-02-11 23:08:02,954 INFO  [Main] Database has been created
+2015-02-11 23:08:02,958 INFO  [Main] Testing Database
+2015-02-11 23:08:02,974 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:08:02,976 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:08:17,972 INFO  [Main] Starting Server...
+2015-02-11 23:08:17,977 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:08:22,191 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:08:22,496 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:08:22,499 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(MAX) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:08:22,501 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Content` LONGTEXT NULL, `Image` VARCHAR(MAX) NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:08:22,504 INFO  [Main] Database has been created
+2015-02-11 23:08:22,504 INFO  [Main] Testing Database
+2015-02-11 23:08:22,519 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:08:22,521 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:10:25,684 INFO  [Main] Starting Server...
+2015-02-11 23:10:25,689 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:10:31,153 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:10:31,469 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:10:31,474 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(MAX) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:10:31,476 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'MAX) NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:10:31,479 INFO  [Main] Database has been created
+2015-02-11 23:10:31,479 INFO  [Main] Testing Database
+2015-02-11 23:10:31,494 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:10:31,497 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:13:08,941 INFO  [Main] Starting Server...
+2015-02-11 23:13:08,947 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:13:13,400 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:13:13,721 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:13:13,725 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:13:13,739 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`ArticleComment` (`_id` INT NOT NULL AUTO_INCREMENT, `ArticleId` INT NULL, `CreatorId` INT NULL, Content` TEXTLONG NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:13:13,750 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` TEXTLONG NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:13:13,750 INFO  [Main] Database has been created
+2015-02-11 23:13:13,750 INFO  [Main] Testing Database
+2015-02-11 23:13:13,764 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:13:13,766 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:14:22,215 INFO  [Main] Starting Server...
+2015-02-11 23:14:22,219 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:14:26,880 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:14:27,202 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:14:27,207 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:14:27,224 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`ArticleComment` (`_id` INT NOT NULL AUTO_INCREMENT, `ArticleId` INT NULL, `CreatorId` INT NULL, `Content` TEXTLONG NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:14:27,238 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TEXTLONG NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:14:27,238 INFO  [Main] Database has been created
+2015-02-11 23:14:27,238 INFO  [Main] Testing Database
+2015-02-11 23:14:27,252 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:14:27,254 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:16:17,988 INFO  [Main] Starting Server...
+2015-02-11 23:16:17,993 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:16:22,323 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:16:22,627 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:16:22,631 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:16:22,644 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`ArticleComment` (`_id` INT NOT NULL AUTO_INCREMENT, `ArticleId` INT NULL, `CreatorId` INT NULL, `Content` LONGTEXT NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:16:22,662 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Chatgroup` (`_id` INT NOT NULL AUTO_INCREMENT, `Name` VARCHAR(255) NULL, `Creator` INT NULL, Member` VARCHAR(500) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:16:22,664 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '` VARCHAR(500) NULL, PRIMARY KEY (`_id`))' at line 1
+2015-02-11 23:16:22,665 INFO  [Main] Database has been created
+2015-02-11 23:16:22,665 INFO  [Main] Testing Database
+2015-02-11 23:16:22,682 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:16:22,684 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:17:22,697 INFO  [Main] Starting Server...
+2015-02-11 23:17:22,702 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:17:27,401 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:17:27,715 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:17:27,719 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:17:27,739 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`ArticleComment` (`_id` INT NOT NULL AUTO_INCREMENT, `ArticleId` INT NULL, `CreatorId` INT NULL, `Content` LONGTEXT NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:17:27,758 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Chatgroup` (`_id` INT NOT NULL AUTO_INCREMENT, `Name` VARCHAR(255) NULL, `Creator` INT NULL, `Member` VARCHAR(500) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:17:27,772 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Images` (`_id` INT NOT NULL AUTO_INCREMENT, `Bytes` VARCHAR(255) NULL, `PRIMARY KEY (`_id`));
+2015-02-11 23:17:27,776 ERROR [BaseDatabaseHelper] Could not Create Database and Tablescom.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_id`))' at line 1
+2015-02-11 23:17:27,776 INFO  [Main] Database has been created
+2015-02-11 23:17:27,776 INFO  [Main] Testing Database
+2015-02-11 23:17:27,794 ERROR [InsertHelper] Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:17:27,796 ERROR [DeleteHelper] com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'BlogServer.Images' doesn't exist
+2015-02-11 23:18:21,794 INFO  [Main] Starting Server...
+2015-02-11 23:18:21,798 WARN  [Main] Soll die Datenbank neu erstellt werden? Y/N
+2015-02-11 23:18:25,969 INFO  [BaseDatabaseHelper] ConnectionString:jdbc:mysql://localhost/
+2015-02-11 23:18:26,274 INFO  [BaseDatabaseHelper] CreateDB:CREATE SCHEMA `BlogServer` ;
+2015-02-11 23:18:26,278 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Articles` (`_id` INT NOT NULL AUTO_INCREMENT, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,294 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`ArticleComment` (`_id` INT NOT NULL AUTO_INCREMENT, `ArticleId` INT NULL, `CreatorId` INT NULL, `Content` LONGTEXT NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,312 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Chatgroup` (`_id` INT NOT NULL AUTO_INCREMENT, `Name` VARCHAR(255) NULL, `Creator` INT NULL, `Member` VARCHAR(500) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,326 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Images` (`_id` INT NOT NULL AUTO_INCREMENT, `Bytes` VARCHAR(255) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,335 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Messages` (`_id` INT NOT NULL AUTO_INCREMENT, `IsGroup` BIT NULL, `Content` LONGTEXT NULL, `Image` VARCHAR(21844) NULL, `Creator` INT NULL, `Destination` INT NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,350 INFO  [BaseDatabaseHelper] CreateTable:CREATE TABLE `BlogServer`.`Users` (`_id` INT NOT NULL AUTO_INCREMENT, `Username` VARCHAR(255) NULL, `Authentification` VARCHAR(64) NULL, `RSAPublicKey` VARCHAR(21844) NULL, PRIMARY KEY (`_id`));
+2015-02-11 23:18:26,365 ERROR [Main] Database could not be created
+2015-02-11 23:18:26,365 INFO  [Main] Testing Database
+2015-02-11 23:18:26,401 INFO  [Main] Insert succeded
