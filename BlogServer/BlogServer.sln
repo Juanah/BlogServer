@@ -7,12 +7,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.Common", "BlogSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.DataAccess", "BlogServer.DataAccess\BlogServer.DataAccess.csproj", "{680C6EE0-6EC3-45A9-A01C-704215798C91}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.Test", "BlogServer.Test\BlogServer.Test.csproj", "{491DA03C-2DFC-4F14-A5F5-205589F7C184}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Debug|x86.ActiveCfg = Debug|x86
+		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Debug|x86.Build.0 = Debug|x86
+		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Release|x86.ActiveCfg = Release|x86
+		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Release|x86.Build.0 = Release|x86
 		{680C6EE0-6EC3-45A9-A01C-704215798C91}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{680C6EE0-6EC3-45A9-A01C-704215798C91}.Debug|x86.Build.0 = Debug|Any CPU
 		{680C6EE0-6EC3-45A9-A01C-704215798C91}.Release|x86.ActiveCfg = Release|Any CPU
@@ -27,6 +33,6 @@ Global
 		{F5CF143F-1CB6-4FF7-92BF-894227048830}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = BlogServer.Main\BlogServer.Main.csproj
+		StartupItem = BlogServer.Test\BlogServer.Test.csproj
 	EndGlobalSection
 EndGlobal

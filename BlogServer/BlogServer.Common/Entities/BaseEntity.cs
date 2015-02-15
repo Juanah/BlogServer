@@ -21,6 +21,10 @@ namespace BlogServer.Common
 		{
 			return Id;
 		}
+		public void SetID (int id)
+		{
+			Id = id;
+		}
 		#endregion
 	}
 }

@@ -15,6 +15,9 @@ namespace BlogServer.Common
 
 		[ForeignKey(typeof(BlogImage))]
 		public BlogImage Image{ get; set; }
+
+		[ForeignKey(typeof(Article))]
+		public Article Article{ get; set; }
 	}
 }
 
