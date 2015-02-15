@@ -7,10 +7,11 @@ namespace BlogServer.Service
 	public class ClientService:IContract
 	{
 		private UserMessageProcessor _userMessageProcessor;
-
+		private ArticleMessageProcessor _articleMessageProcessor;
 		public ClientService ()
 		{
 			_userMessageProcessor = RepoHelper.UserProcessor;
+			_articleMessageProcessor = RepoHelper.ArticleProcessor;
 			if (_userMessageProcessor == null) {
 				throw new ArgumentNullException ("_userMessageProcessor");
 			}
@@ -37,6 +38,11 @@ namespace BlogServer.Service
 		public BlogServer.Common.BoolResponseMessage UserAddCommand (string requestobject)
 		{
 			return _userMessageProcessor.AddUser (requestobject);
+		}
+
+		public BlogServer.Common.BoolResponseMessage UserAcceptCommand (string requestobject)
+		{
+			return _userMessageProcessor.AccecptUser (requestobject);
 		}
 
 		#endregion

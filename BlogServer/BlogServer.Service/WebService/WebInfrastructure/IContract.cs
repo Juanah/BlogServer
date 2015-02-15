@@ -26,6 +26,13 @@ namespace BlogServer.Service
 		           ResponseFormat = WebMessageFormat.Json,
 		           UriTemplate = "user_add/{requestobject}")]
 		BoolResponseMessage UserAddCommand (string requestobject);
+
+		[OperationContract]
+		[WebInvoke(Method = "GET",
+		           ResponseFormat = WebMessageFormat.Json,
+		           UriTemplate = "user_accept/{requestobject}")]
+		BoolResponseMessage UserAcceptCommand (string requestobject);
+
 	}
 }
 

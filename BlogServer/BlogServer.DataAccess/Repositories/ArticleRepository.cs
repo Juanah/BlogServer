@@ -36,6 +36,9 @@ namespace BlogServer.DataAccess
 
 		public void AddArticle(Article article)
 		{
+			//Save Image first
+			_context.Insert<BlogImage> (article.Image);
+
 			if (!_context.Insert<Article> (article)) {
 				_log.Warn ("Could not write Article into Database");
 			} else {

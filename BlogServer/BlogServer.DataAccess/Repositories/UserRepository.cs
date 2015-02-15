@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using BlogServer.Common;
 using Core;
 using log4net;
+using System.Linq;
+
+
 namespace BlogServer.DataAccess
 {
 	/// <summary>
@@ -27,6 +30,17 @@ namespace BlogServer.DataAccess
 
 			_user = _context.GetTable<User>(typeof(User));
 			_log.Info ("Get Users from Database");
+		}
+
+		public bool UserIsValid(UserDTO dto)
+		{
+
+			if(!_user.Any(na => na.Authentification.Equals(dto.Authentification)))
+			{
+				return false;
+			}
+
+			return true;
 		}
 
 		public List<User> User{

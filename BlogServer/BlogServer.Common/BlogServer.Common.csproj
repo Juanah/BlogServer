@@ -14,7 +14,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug</OutputPath>
+    <OutputPath>..\bin</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -23,7 +23,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release</OutputPath>
+    <OutputPath>..\bin</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -53,6 +53,24 @@
     <Compile Include="Messages\Global\BoolResponseMessage.cs" />
     <Compile Include="Messages\User\UserAcceptMessage.cs" />
     <Compile Include="Messages\User\UserRequestMessage.cs" />
+    <Compile Include="Messages\Article\ArticleAdd.cs" />
+    <Compile Include="Messages\Article\ArticleAddResponse.cs" />
+    <Compile Include="Messages\Article\ArticleUpdate.cs" />
+    <Compile Include="Messages\Article\ArticleDelete.cs" />
+    <Compile Include="Messages\Comment\CommentAdd.cs" />
+    <Compile Include="Messages\Comment\CommentAddResponse.cs" />
+    <Compile Include="Messages\Comment\CommentUpdate.cs" />
+    <Compile Include="Messages\Comment\CommentDelete.cs" />
+    <Compile Include="Messages\Message\MessageAdd.cs" />
+    <Compile Include="Messages\Message\MessageDelete.cs" />
+    <Compile Include="Messages\Message\MessageUpdate.cs" />
+    <Compile Include="Messages\Message\MessageGet.cs" />
+    <Compile Include="Messages\Message\MessageReceive.cs" />
+    <Compile Include="Messages\Comment\CommentReceive.cs" />
+    <Compile Include="Messages\Comment\CommentGet.cs" />
+    <Compile Include="Messages\Article\ArticleGet.cs" />
+    <Compile Include="Messages\Article\ArticleReceive.cs" />
+    <Compile Include="Messages\User\UserUpdate.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
