@@ -12,6 +12,9 @@ namespace BlogServer.Common
 		public User Creator{ get; set; }
 
 		public string Content{ get; set; }
+
+		[ForeignKey(typeof(BlogImage))]
+		public BlogImage Image{ get; set; }
 	}
 }
 

@@ -43,6 +43,7 @@
     <Reference Include="Infrastructure">
       <HintPath>..\..\..\MySQLEntity\bin\Infrastructure.dll</HintPath>
     </Reference>
+    <Reference Include="System.Drawing" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,12 +54,17 @@
     <Compile Include="Init.cs" />
     <Compile Include="BlogImageRepository.cs" />
     <Compile Include="Converter\UserDTOConverter.cs" />
+    <Compile Include="Util\ImageHelper.cs" />
+    <Compile Include="Converter\ArticleDTOConverter.cs" />
+    <Compile Include="Converter\CommentDTOConverter.cs" />
+    <Compile Include="Converter\MessageDTOConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\UserRe\" />
     <Folder Include="Converter\" />
+    <Folder Include="Util\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogServer.Common\BlogServer.Common.csproj">

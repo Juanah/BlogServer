@@ -5,10 +5,11 @@ namespace BlogServer.Common
 	public class UserDTO
 	{
 
-		public String Username{ get; set; }
+		public string Username{ get; set; }
 
-		public int TempID{ get; set; }
+		public string Authentification{ get; set; }
 
+		public byte[] ImageBytes{ get; set; }
 	}
 }
 

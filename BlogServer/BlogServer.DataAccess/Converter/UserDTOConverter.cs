@@ -11,7 +11,17 @@ namespace BlogServer.DataAccess
 
 		public static UserDTO ConvertToDTO(User user)
 		{
-			return new UserDTO () { TempID = user.Id, Username = user.Username };
+			UserDTO dto = new UserDTO ();
+
+			dto.Authentification = user.Authentification;
+			dto.Username = user.Username;
+			if (user.Image.Path != "") {
+				var image = ImageHelper.GetImageBytes (user.Image);
+				if (image != null) {
+					dto.ImageBytes = image;
+				}
+			}
+			return dto;
 		}
 
 	}

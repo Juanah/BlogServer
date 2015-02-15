@@ -43,6 +43,9 @@
     <Compile Include="Entities\Comment.cs" />
     <Compile Include="Entities\Message.cs" />
     <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="DTO\ArticleDTO.cs" />
+    <Compile Include="DTO\CommentDTO.cs" />
+    <Compile Include="DTO\MessageDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

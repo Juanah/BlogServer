@@ -50,5 +50,9 @@
       <Project>{680C6EE0-6EC3-45A9-A01C-704215798C91}</Project>
       <Name>BlogServer.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BlogServer.Service\BlogServer.Service.csproj">
+      <Project>{FDF073F1-C500-4F2B-96AC-A3FEC8E798E8}</Project>
+      <Name>BlogServer.Service</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 using System;
 using BlogServer.DataAccess;
 using BlogServer.Common;
+using BlogServer.Service;
 
 namespace BlogServer.Test
 {
@@ -10,7 +11,7 @@ namespace BlogServer.Test
 		static UserRepository userRepo = Init.UserRepository;
 		static ArticleRepository articleRepo = Init.ArticleRepository;
 		static MessageRepository messageRepo = Init.MessageRepository;
-
+		static Hosts _hosts = new Hosts(); 
 		public static void Main (string[] args)
 		{
 			W ("Test Application for BlogServer 1.0");
@@ -30,6 +31,9 @@ namespace BlogServer.Test
 			userRepo.AddUser (testUser);
 			DisplayUser ();
 
+			W ("Try to start Service");
+			StartWebService ();
+
 			W ("Test have been done");
 			Console.ReadKey ();
 		}
@@ -41,6 +45,11 @@ namespace BlogServer.Test
 			foreach (var user in users) {
 				W (String.Format ("User {0} with authentification {1}, id = {2}", user.Username, user.Authentification,user.Id));
 			}
+		}
+
+		static void StartWebService()
+		{
+			_hosts.StartServices ();
 		}
 
 		static void W(object obj)

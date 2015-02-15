@@ -30,12 +30,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebService\WebInfrastructure\IContract.cs" />
+    <Compile Include="WebService\ClientService.cs" />
+    <Compile Include="Hosts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="WebService\" />
+    <Folder Include="WebService\WebInfrastructure\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BlogServer.DataAccess\BlogServer.DataAccess.csproj">
+      <Project>{680C6EE0-6EC3-45A9-A01C-704215798C91}</Project>
+      <Name>BlogServer.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BlogServer.Common\BlogServer.Common.csproj">
+      <Project>{752AB79D-C521-4A9F-BF63-6EDFBC39DC90}</Project>
+      <Name>BlogServer.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
