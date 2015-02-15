@@ -51,6 +51,8 @@
     <Compile Include="Messages\User\UserDelete.cs" />
     <Compile Include="Messages\User\UserGet.cs" />
     <Compile Include="Messages\Global\BoolResponseMessage.cs" />
+    <Compile Include="Messages\User\UserAcceptMessage.cs" />
+    <Compile Include="Messages\User\UserRequestMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
