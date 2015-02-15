@@ -6,7 +6,7 @@ namespace BlogServer.DataAccess
 	public static class ArticleDTOConverter
 	{
 
-		public ArticleDTO ConvertToDTO(Article article)
+		public static ArticleDTO ConvertToDTO(Article article)
 		{
 			ArticleDTO dto = new ArticleDTO ();
 			dto.Creator = UserDTOConverter.ConvertToDTO (article.Creator);

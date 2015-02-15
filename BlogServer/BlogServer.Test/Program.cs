@@ -11,7 +11,7 @@ namespace BlogServer.Test
 		static UserRepository userRepo = Init.UserRepository;
 		static ArticleRepository articleRepo = Init.ArticleRepository;
 		static MessageRepository messageRepo = Init.MessageRepository;
-		static Hosts _hosts = new Hosts(); 
+		static Hosts _hosts; 
 		public static void Main (string[] args)
 		{
 			W ("Test Application for BlogServer 1.0");
@@ -49,6 +49,7 @@ namespace BlogServer.Test
 
 		static void StartWebService()
 		{
+			_hosts = new Hosts (new BlogServer.Processor.UserMessageProcessor(Init.UserRepository));
 			_hosts.StartServices ();
 		}
 

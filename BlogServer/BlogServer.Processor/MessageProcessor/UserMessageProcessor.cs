@@ -12,7 +12,7 @@ namespace BlogServer.Processor
 	public class UserMessageProcessor
 	{
 		private UserRepository _userRepo;
-		private ILog _log = LogManager.GetLogger(typeof(UserMessageProcessor))]
+		private ILog _log = LogManager.GetLogger(typeof(UserMessageProcessor));
 		public UserMessageProcessor (UserRepository _userRepo)
 		{
 			this._userRepo = _userRepo;

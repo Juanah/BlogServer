@@ -1,6 +1,7 @@
 using System;
 using System.ServiceModel;
 using System.ServiceModel.Web;
+using BlogServer.Common;
 
 namespace BlogServer.Service
 {
@@ -20,7 +21,11 @@ namespace BlogServer.Service
 		           UriTemplate = "testbytes/{requestobject}")]
 		byte[] TestByteRequest (string requestobject);
 
-
+		[OperationContract]
+		[WebInvoke(Method = "GET",
+		           ResponseFormat = WebMessageFormat.Json,
+		           UriTemplate = "user_add/{requestobject}")]
+		BoolResponseMessage UserAddCommand (string requestobject);
 	}
 }
 

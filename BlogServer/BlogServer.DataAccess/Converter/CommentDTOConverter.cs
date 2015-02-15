@@ -16,6 +16,7 @@ namespace BlogServer.DataAccess
 			if (image != null) {
 				dto.ImageBytes = image;
 			}
+			return dto;
 		}
 
 

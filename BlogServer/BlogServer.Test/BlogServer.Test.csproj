@@ -54,5 +54,9 @@
       <Project>{FDF073F1-C500-4F2B-96AC-A3FEC8E798E8}</Project>
       <Name>BlogServer.Service</Name>
     </ProjectReference>
+    <ProjectReference Include="..\BlogServer.Processor\BlogServer.Processor.csproj">
+      <Project>{37296F80-A679-4F27-A619-2BFB971EC2D8}</Project>
+      <Name>BlogServer.Processor</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

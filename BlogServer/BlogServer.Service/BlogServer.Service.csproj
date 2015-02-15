@@ -41,6 +41,7 @@
     <Compile Include="WebService\WebInfrastructure\IContract.cs" />
     <Compile Include="WebService\ClientService.cs" />
     <Compile Include="Hosts.cs" />
+    <Compile Include="WebService\ProcessorHelper.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
