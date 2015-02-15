@@ -46,10 +46,19 @@
     <Compile Include="DTO\ArticleDTO.cs" />
     <Compile Include="DTO\CommentDTO.cs" />
     <Compile Include="DTO\MessageDTO.cs" />
+    <Compile Include="Messages\User\UserAdd.cs" />
+    <Compile Include="Messages\User\UserRegister.cs" />
+    <Compile Include="Messages\User\UserDelete.cs" />
+    <Compile Include="Messages\User\UserGet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="DTO\" />
+    <Folder Include="Messages\" />
+    <Folder Include="Messages\User\" />
+    <Folder Include="Messages\Article\" />
+    <Folder Include="Messages\Comment\" />
+    <Folder Include="Messages\Message\" />
   </ItemGroup>
 </Project>
