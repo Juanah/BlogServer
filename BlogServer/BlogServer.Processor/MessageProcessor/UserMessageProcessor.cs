@@ -45,17 +45,13 @@ namespace BlogServer.Processor
 			}
 
 			if (!_userRepo.User.Any (n => n.Username.Equals(""))) {
-				//TODO das geht besser ;)
-				BlogImage emptyImage = new BlogImage () {
-					Path = ""
-				};
 				User newUser = new User () {
 					Username = addMessage.ToAdd.Username,
 					Authentification = addMessage.ToAdd.Authentification,
-					RSAPublicKey = "",
-					Image = emptyImage
+					RSAPublicKey = ""
 				};
 				_userRepo.AddUser (newUser);
+				_log.Info (String.Format ("Added User {0}", newUser.Username));
 				response.Success = true;
 				return response;
 			}

@@ -45,6 +45,13 @@ namespace BlogServer.DataAccess
 
 		public void AddUser(User user)
 		{
+			BlogImage emptyImage = new BlogImage () {
+				Path = ""
+			};
+
+			_context.Insert<BlogImage> (emptyImage);
+			user.Image = emptyImage;
+
 			if (!_context.Insert<User> (user)) {
 				_log.Warn ("could not insert User:" + user.Username);
 			} else {

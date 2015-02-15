@@ -10,15 +10,12 @@ namespace BlogServer.Service
 
 		public ClientService ()
 		{
+			_userMessageProcessor = RepoHelper.UserProcessor;
+			if (_userMessageProcessor == null) {
+				throw new ArgumentNullException ("_userMessageProcessor");
+			}
 		}
 		
-
-		public ClientService (BlogServer.Processor.UserMessageProcessor _userMessageProcessor)
-		{
-			this._userMessageProcessor = _userMessageProcessor;
-		}
-		
-
 		#region IContract implementation
 
 		public string TestRequest (string requestobject)
