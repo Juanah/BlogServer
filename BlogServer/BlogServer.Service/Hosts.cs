@@ -20,7 +20,7 @@ namespace BlogServer.Service
 		{
 			RepoHelper.UserProcessor = _userProcessor;
 
-			var clientUri = new Uri ("http://192.168.2.102:55764/WebService");
+			var clientUri = new Uri ("http://192.168.0.101:55764/WebService");
 			var clientService = new WebServiceHost (typeof(ClientService), clientUri);
 
 			clientService.Opened += delegate(object sender, EventArgs e) {

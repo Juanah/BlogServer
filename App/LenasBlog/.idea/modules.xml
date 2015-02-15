@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/LenasBlog.iml" filepath="$PROJECT_DIR$/LenasBlog.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lenasblog.dataaccess/lenasblog.dataaccess.iml" filepath="$PROJECT_DIR$/lenasblog.dataaccess/lenasblog.dataaccess.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lenasblog.webservice/lenasblog.webservice.iml" filepath="$PROJECT_DIR$/lenasblog.webservice/lenasblog.webservice.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,7 @@
 package de.juanah.lenasblog;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -17,6 +18,11 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import de.juanah.lenasblogdataaccess.Entities.User;
+import de.juanah.lenasblogwebservice.DTO.Communication.Processor.UserProcessor;
+import de.juanah.lenasblogwebservice.DTO.Communication.WCFHelper;
 
 
 public class MainActivity extends ActionBarActivity
@@ -100,6 +106,8 @@ public class MainActivity extends ActionBarActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            new TestWcf().execute();
             return true;
         }
 
@@ -143,6 +151,32 @@ public class MainActivity extends ActionBarActivity
             super.onAttach(activity);
             ((MainActivity) activity).onSectionAttached(
                     getArguments().getInt(ARG_SECTION_NUMBER));
+        }
+
+
+
+    }
+    private class TestWcf extends AsyncTask<Void,Void,Boolean>
+    {
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            UserProcessor processor = new UserProcessor();
+            User user = new User();
+            user.setUsername("Android");
+            user.setAuthentification("No");
+
+            return processor.AddUser(user);
+        }
+
+        @Override
+        protected void onPostExecute(Boolean aBoolean) {
+            if(aBoolean) {
+                Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_LONG ).show();
+            }else
+            {
+                Toast.makeText(MainActivity.this,"FAILED",Toast.LENGTH_LONG ).show();
+
+            }
         }
     }
 

@@ -1,11 +1,10 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.1"
 
     defaultConfig {
-        applicationId "de.juanah.lenasblog"
         minSdkVersion 14
         targetSdkVersion 21
         versionCode 1
@@ -23,5 +22,5 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:21.0.2'
     compile project(':lenasblog.dataaccess')
-    compile project(':lenasblog.webservice')
+    compile files('libs/gson-2.3.1.jar')
 }
