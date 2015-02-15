@@ -50,6 +50,7 @@
     <Compile Include="Messages\User\UserRegister.cs" />
     <Compile Include="Messages\User\UserDelete.cs" />
     <Compile Include="Messages\User\UserGet.cs" />
+    <Compile Include="Messages\Global\BoolResponseMessage.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -60,5 +61,6 @@
     <Folder Include="Messages\Article\" />
     <Folder Include="Messages\Comment\" />
     <Folder Include="Messages\Message\" />
+    <Folder Include="Messages\Global\" />
   </ItemGroup>
 </Project>

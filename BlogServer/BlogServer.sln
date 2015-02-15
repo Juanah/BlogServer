@@ -11,12 +11,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.Test", "BlogServ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.Service", "BlogServer.Service\BlogServer.Service.csproj", "{FDF073F1-C500-4F2B-96AC-A3FEC8E798E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogServer.Processor", "BlogServer.Processor\BlogServer.Processor.csproj", "{37296F80-A679-4F27-A619-2BFB971EC2D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37296F80-A679-4F27-A619-2BFB971EC2D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{37296F80-A679-4F27-A619-2BFB971EC2D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{37296F80-A679-4F27-A619-2BFB971EC2D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{37296F80-A679-4F27-A619-2BFB971EC2D8}.Release|x86.Build.0 = Release|Any CPU
 		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Debug|x86.ActiveCfg = Debug|x86
 		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Debug|x86.Build.0 = Debug|x86
 		{491DA03C-2DFC-4F14-A5F5-205589F7C184}.Release|x86.ActiveCfg = Release|x86

@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FDF073F1-C500-4F2B-96AC-A3FEC8E798E8}</ProjectGuid>
+    <ProjectGuid>{37296F80-A679-4F27-A619-2BFB971EC2D8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BlogServer.Service</RootNamespace>
-    <AssemblyName>BlogServer.Service</AssemblyName>
+    <RootNamespace>BlogServer.Processor</RootNamespace>
+    <AssemblyName>BlogServer.Processor</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,35 +30,30 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebService\WebInfrastructure\IContract.cs" />
-    <Compile Include="WebService\ClientService.cs" />
-    <Compile Include="Hosts.cs" />
+    <Compile Include="MessageProcessor\UserMessageProcessor.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="WebService\" />
-    <Folder Include="WebService\WebInfrastructure\" />
+    <Folder Include="MessageProcessor\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BlogServer.DataAccess\BlogServer.DataAccess.csproj">
-      <Project>{680C6EE0-6EC3-45A9-A01C-704215798C91}</Project>
-      <Name>BlogServer.DataAccess</Name>
-    </ProjectReference>
     <ProjectReference Include="..\BlogServer.Common\BlogServer.Common.csproj">
       <Project>{752AB79D-C521-4A9F-BF63-6EDFBC39DC90}</Project>
       <Name>BlogServer.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BlogServer.Processor\BlogServer.Processor.csproj">
-      <Project>{37296F80-A679-4F27-A619-2BFB971EC2D8}</Project>
-      <Name>BlogServer.Processor</Name>
+    <ProjectReference Include="..\BlogServer.DataAccess\BlogServer.DataAccess.csproj">
+      <Project>{680C6EE0-6EC3-45A9-A01C-704215798C91}</Project>
+      <Name>BlogServer.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
