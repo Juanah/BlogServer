@@ -52,11 +52,13 @@
     <Compile Include="Repositories\MessageRepository.cs" />
     <Compile Include="Init.cs" />
     <Compile Include="BlogImageRepository.cs" />
+    <Compile Include="Converter\UserDTOConverter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Repositories\" />
     <Folder Include="Repositories\UserRe\" />
+    <Folder Include="Converter\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BlogServer.Common\BlogServer.Common.csproj">

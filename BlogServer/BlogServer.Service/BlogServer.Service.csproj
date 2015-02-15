@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{752AB79D-C521-4A9F-BF63-6EDFBC39DC90}</ProjectGuid>
+    <ProjectGuid>{FDF073F1-C500-4F2B-96AC-A3FEC8E798E8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>BlogServer.Common</RootNamespace>
-    <AssemblyName>BlogServer.Common</AssemblyName>
+    <RootNamespace>BlogServer.Service</RootNamespace>
+    <AssemblyName>BlogServer.Service</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,23 +30,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="Infrastructure">
-      <HintPath>..\..\..\MySQLEntity\bin\Infrastructure.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\BaseEntity.cs" />
-    <Compile Include="Entities\BlogImage.cs" />
-    <Compile Include="Entities\Article.cs" />
-    <Compile Include="Entities\Comment.cs" />
-    <Compile Include="Entities\Message.cs" />
-    <Compile Include="DTO\UserDTO.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="DTO\" />
+    <Folder Include="WebService\" />
   </ItemGroup>
 </Project>
